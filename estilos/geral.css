@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --corfundoclaro: #E3D081;
+    --corfundoescuro: #3C1518;
+}
+
+html {
+    background-color: var(--corfundoescuro);
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--corfundoescuro), var(--corfundoclaro));
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+body > main > section#conjunto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 550px;
+    width: 250px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 6px 6px 12px var(--corfundoescuro);
+    transition: width 0.5s;
+    transition: height 0.5s;
+    transition-timing-function: ease;
+}
+
+section#conjunto:hover {
+    box-shadow: 12px 12px 16px var(--corfundoescuro);
+    transition: box-shadow 0.8s;
+    transform: translate(-51%,-51%);
+    transition: transform 0.7s;
+}
+body > main > section#conjunto > div#imagem {
+    background-color: var(--corfundoescuro);
+    background-image: url(../imagens/fundo-login.jpg);
+    height: 200px;
+    display: block;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section#conjunto > div#formulario {
+    padding: 5px;
+    display: block;
+}
+
+section#conjunto > div#formulario > h1 {
+    text-align: center;
+    background-image:linear-gradient(to right, var(--corfundoescuro), rgba(165, 42, 42, 0.075));
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+div#formulario > p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+div#login {
+    /*border: 1px solid var
+    (--corfundoescuro);*/
+    border-radius: 10px 10px;
+    height: 35px;
+    background-color: var(--corfundoescuro);
+}
+
+div#login > span {
+    width: 25px;
+    color: var(--corfundoclaro);
+}
+
+div#login > input {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 33px;
+    width: calc(100% - 30px);
+    border-radius: 10px 10px;
+    transform: translateY(-9px);
+    background-color: #D5C6E0;
+}
+
+div#login > input:focus-within {
+    background-color: white; 
+} /*Quando clicado, o fundo ficará branco*/
+
+div#login> label {
+    display: none;
+}
+
+div#senha {
+    /*border: 1px solid var(--corfundoescuro);*/
+    border-radius: 10px 10px;
+    height: 35px;
+    background-color: var(--corfundoescuro);
+    margin: 10px 0px;
+}
+
+div#senha > span {
+    width: 25px;
+    color: var(--corfundoclaro);
+    transform: translateY(7px);
+}
+
+div#senha > input {
+    margin-bottom: 10px;
+    height: 35px;
+    width: calc(100% - 30px);
+    border-radius: 10px 10px;
+    transform: translateY(-2px);
+    background-color: #D5C6E0;
+}
+div#senha > input:focus-within {
+    background-color: white; 
+} /*Quando clicado, o fundo ficará branco*/
+div#senha > label {
+    display: none;
+}
+
+div#enviar > input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: #502125;
+    color: white;
+    box-shadow: 2px 2px 4px black;
+}
+
+div#esqueci > a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--corfundoclaro);
+    margin-top: 10px;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 2px 2px 5px black;
+}

@@ -92,7 +92,7 @@ div#login > input {
     width: calc(100% - 30px);
     border-radius: 10px 10px;
     transform: translateY(-9px);
-    background-color: #D5C6E0;
+    background-color: #BBADA0;
 }
 
 div#login > input:focus-within {
@@ -123,7 +123,7 @@ div#senha > input {
     width: calc(100% - 30px);
     border-radius: 10px 10px;
     transform: translateY(-2px);
-    background-color: #D5C6E0;
+    background-color: #BBADA0;
 }
 div#senha > input:focus-within {
     background-color: white; 
